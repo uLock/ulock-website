@@ -2,6 +2,7 @@ sudo: false
 language: node_js
 node_js:
 - stable
+install: true
 deploy:
   - provider: s3
     access_key_id: AKIAJOHB55EF6VZPMOXQ
