@@ -1,0 +1,19 @@
+{
+  "name": "ulock-website",
+  "version": "1.0.0",
+  "description": "Ulock website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uLock/ulock-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uLock/ulock-website/issues"
+  },
+  "homepage": "https://github.com/uLock/ulock-website#readme"
+}
