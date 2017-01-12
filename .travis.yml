@@ -4,15 +4,12 @@ node_js:
 - stable
 install: true
 deploy:
-  - provider: s3
-    access_key_id: AKIAI7RVQWYD3EQD4EZA
-    secret_access_key:
-      secure: FoxmocKpZ9hjCJix4CyyXM1RmnKb+DppcnMNIGKxtR2+9Ul4aPJ7xuVzOV9a18b76xEm4DfX3Fg50UwVEMNunfDVENBWBtHQWTDD22/bFfLMhUUeOV3s/YtuzDz7OH5wYpvW9l7d/vM+agY1HLDOuFwkHQdjHBRl/LbhYt+e1A7qpyWJbFEpHlqJDmd6b2JQ+2IuQgiXiclc30R9H0IQAbRgyg/jos73ro9NDLAZQ/4Ly56c73SMNVQNBdxmfvUAkkgGZlKL07zBBsp44vJOjK0gasoRwH1UvHfFEfS8burJ9ujMzs9yTqnVojeLmtuAvvGdlEgzgn8C+hOTYz8ghIa4ya1RkCk+DqCkvJucqimkUwtGPFi4dS0tG1wuyimFTCoiJsrGUKetnUNPLmgu7ssnpfZhx0nzns2DP890RhQ1h1kmJ31JN9IeR9oPdvCbmSVBpvSBf8woqMPWeurlxFUDXJ1Mjzz1k8uydNDEpiBQFMcmyXLmdp0FFQuBFfNChxtWdMBSBYj+1jEgvGsjL5FOlOaAL05Z6C3WJNJCpfKHOj70x1F44BqXxQsKNWzGdKALE9M1TqYLgHXgR60XT3SUv0s1ERawUditXLUk5uuekOjJ2eNTUE/aa1XTeDgknqT/vk3DjaxOYtMLUX7jMGU84xQd5ZaJBtwSPx5tZ3k=
-    bucket: ulock-website
-    local-dir: app
-    acl: public_read
-    skip_cleanup: true
-    detect_encoding: true
-    on:
-      branch: master
-      repo: uLock/ulock-website
+  provider: s3
+  access_key_id: AKIAI7RVQWYD3EQD4EZA
+  secret_access_key:
+    secure: v1sRCXKQGpSSlF3afMBM1YJq1/bF7JSz+V9YV5+tT7JijkqkNY8voAaf6tcOirKFanbizMyIOlBbJGev3JPevTb0P8IX/4E+aok6I4X8s5C3W6zDnWFyvmeWkc5o578FKVW6Dwjh2VdsfebCBM4MKNh0zIcqNJLy3NM5HfHFE7QaND8363vc/I2xhXvZ12/8SAM5dbzAnfXgG3op0X5WpXN9QN5fua+cfoHu43T36Uc5XgdWOC7U1c24YX2XfDWrnnerdB506G0lEFADVtRuY5pCHrCrfbiSAgfMWxEmt5nEHC7h7/W62m6A8DZilh/xV0SbnYbgk7H+UcO/c4p0rID/u0RUZiuY02HDQajWg0O4yzvWmyzkq45xjtljMpgMUBOPZd0CdtLo8Kb3Aj8C1/bY9Hiw3skgU3/qq//HQml9/kT/uuxMd+fx20L+L+KBexIWoNe1IKV9gGOuVKqAQ3g2hKOs6v7Juwd2IvPRdg4MFMfNiFGhz3tSruiKow0NcS0J6ebkE8yy7Ix3t+uEWJchY5UC9VbPWC6g5025ilEGxNMufnw0i+4GYU+7ARgkG1AJwIGYiQ7Uw/9VuVo7ckeReb/wxGtkkZuY6aWkjK+/yaW/Ad+9sxzxTgmNa8qNUD25FckPOJqIqjO1T1I42tIERX3JWamWmOwMnjQhakQ=
+  bucket: ulock.co
+  local-dir: app
+  acl: public_read
+  on:
+    repo: uLock/ulock-website
